@@ -2,8 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="./resumer.css">
-
-<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="./resumer.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="//at.alicdn.com/t/font_394156_kn62cw551toz85mi.js"></script>
   <meta charset="utf-8">
   <title>简历</title>
@@ -123,19 +123,5 @@
   </div>
   
 </div>
-<script>
-var $left=$(".left")
-var selector =$(".left>ul>li")
-console.log(selector)
-console.log($left)
-selector.on("click",selector,e=>{
-$li=$(e.currentTarget)
-console.log($li)
-let index =$li.index()
-console.log(index)
-$('.right>ul>li').eq(index).addClass('active')
-.siblings().removeClass('active')
-})
-</script>
 </body>
 </html>
