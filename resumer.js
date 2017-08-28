@@ -1,0 +1,12 @@
+var $left=$(".left")
+var selector =$(".left>ul>li")
+console.log(selector)
+console.log($left)
+selector.on("click",selector,e=>{
+$li=$(e.currentTarget)
+console.log($li)
+let index =$li.index()
+console.log(index)
+$('.right>ul>li').eq(index).addClass('active')
+.siblings().removeClass('active')
+})
